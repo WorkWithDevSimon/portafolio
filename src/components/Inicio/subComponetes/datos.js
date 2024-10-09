@@ -31,7 +31,7 @@ import { logro_1, logro_2, logro_3, logro_4, logro_5, logro_6, logro_7, logro_8 
 const mainDatos =
 {
     main_info_h1: "Hola, me llamoooooooooooo ",
-    main_info_span: "Simón Santibáñez",
+    main_info_span: "Simón Santibáñezzzzzzzz",
     main_info_descripcion: "Como Desarrollador Full Stack Junior, mi enfoque en el mundo digital es altamente analítico. A través de un aprendizaje autodidacta continuo, he adquirido una comprensión sólida y completa de las tecnologías que impulsan nuestro entorno digital, así como de los principios y estructuras que conforman el desarrollo del software",
     main_info_redes: [
         { text: "linkedin", url: "https://www.linkedin.com/in/sim%C3%B3n-santib%C3%A1%C3%B1ez-6bb6a12a4/", icon: linkedin },

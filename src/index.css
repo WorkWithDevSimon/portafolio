@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden;
+  background-color: #06142E;
+
+  /* # 06142d
+     # 06142E
+   */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Asegura que el contenido llene la pantalla */
+}
+
+/* Esto va ir siempre en todas entonces poque no ponerla global ya que 
+basicamente todos los h1  */
+h1 {
+  font-size: clamp(2.5vw, 1.5em, 2rem);
+  font-weight: 800;
+  line-height: 1.3;
+  color: #f0f0f0;
+  margin: 0.5rem 0;
+
+}
+
+.SobreLinea {
+  margin-left: 2px;
+  margin-top: -3px;
+  width: 100px;
+  height: 4px;
+  background-color: red;
+}

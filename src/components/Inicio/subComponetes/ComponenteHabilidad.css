@@ -1,0 +1,302 @@
+.habilidades {
+    width: 100vw;
+    color: white;
+    overflow: hidden;
+}
+
+.habilidades_titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.habilidades h1 {
+    color: #00ffee;
+    margin: 0;
+}
+
+.card_container_habilidades {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* ------------------------------------------------------------------------------ */
+.ColaboracionYControl,
+.Entornos_de_Desarrollo,
+.Productividad_Análisis,
+.framework,
+.APIs,
+.Tecnologías_Cloud,
+.back_end,
+.Bases_de_Datos,
+.FrontEnd {
+    padding: 2rem;
+    position: relative;
+    width: 325px;
+    height: 300px;
+    background-color: #000000;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.FrontEnd::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(60deg, red, orange, yellow, green, cyan, blue, violet, pink, brown, grey, white);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: borderAnimation 5s linear infinite;
+}
+
+.back_end::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #003366, #004080, #00509e, #0066cc, #cc0000, #ff3333, #ff6666);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: borderAnimation 5s linear infinite;
+}
+
+
+
+.Bases_de_Datos::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #ff7f50, #ff6347, #ff4500, #ff8c00, #ffa07a, #ffab40, #ff6f00);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: borderAnimation 5s linear infinite;
+}
+
+.Tecnologías_Cloud::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #87ceeb, #b0e0e6, #add8e6, #ffffff, #f0f8ff, #e6f7ff, #cce7ff);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: borderAnimation 5s linear infinite;
+}
+
+
+.Productividad_Análisis::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #003300, #004d00, #006400, #007a33, #228b22, #2e8b57, #3cb371, #4caf50, #66cdaa, #8fbc8f, #9acd32, #a2d9a4, #9cff9c, #00ff00, #7cfc00, #00fa9a, #00ff7f, #00ff99, #7fff00, #adff2f, #32cd32, #66ff66, #00ffcc, #9fef9f, #00ffb3, #a3d9a1, #b2d8b8, #c6e2b3, #d4e157);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: borderAnimation 5s linear infinite;
+}
+
+.APIs::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(45deg,
+            #f5f5dc,
+            #f5deb3,
+            #deb887,
+            #d2b48c,
+            #bc8f8f,
+            #e3dac9,
+            #c3b091,
+            #c8ad7f,
+            #bfa27a,
+            #edc9af,
+            #e4b678,
+            #d2a679,
+            #e9d5c0,
+            #f0ead6,
+            #c5a58a,
+            #d3b3a2,
+            #b79770,
+            #a67b5b,
+            #8b5a2b,
+            #cd853f,
+            #b8860b,
+            #d2a679,
+            #8b4513,
+            #a0522d,
+            #d2691e,
+            #e5c1a1,
+            #f5e3c8,
+            #eedd82,
+            #f4a460,
+            #f5deb3);
+
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: borderAnimation 5s linear infinite;
+}
+
+.framework::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(45deg,
+            #ffffe0,
+            #ffffb3,
+            #ffff99,
+            #ffff66,
+            #ffff33,
+            #ffff00,
+            #f9fbe7,
+            #f0f4c3,
+            #e6ee9c,
+            #dce775,
+            #d4e157,
+            #cddc39,
+            #c0ca33,
+            #afb42b,
+            #9e9d24,
+            #827717,
+            #f8f9f1);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: borderAnimation 5s linear infinite;
+}
+
+.Entornos_de_Desarrollo::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(45deg,
+            #0000ff,
+            #1e90ff,
+            #00bfff,
+            #87cefa,
+            #6495ed,
+            #4169e1,
+            #4682b4,
+            #5f9ea0,
+            #7b68ee,
+            #6a5acd,
+            #483d8b,
+            #4b0082,
+            #8a2be2,
+            #9370db,
+            #9400d3,
+            #9932cc,
+            #8b008b,
+            #ba55d3,
+            #da70d6,
+            #ee82ee,
+            #d8bfd8,
+            #dda0dd,
+            #ee82ee);
+
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: borderAnimation 5s linear infinite;
+}
+
+.ColaboracionYControl::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: inherit;
+    background: linear-gradient(45deg,
+            #ff6600,
+            #ff8000,
+            #ff9933,
+            #ffb84d,
+            #ffcc66,
+            #66ff66,
+            #33cc33,
+            #009900,
+            #00cc00,
+            #00ff00);
+
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: borderAnimation 5s linear infinite;
+}
+
+/* ------------------------------------------------------------------------------ */
+.card_habilidaes_lenguajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.card_container_habilidades h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card_container_habilidades img {
+    width: 40px;
+    height: 40px;
+
+}
+
+@keyframes borderAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

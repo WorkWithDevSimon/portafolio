@@ -1,0 +1,66 @@
+.cargando {
+    position: absolute;
+    /* Cambiado a absolute para centrar dentro de un contenedor */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 50%;
+    /* Ajuste para centrar verticalmente */
+    left: 50%;
+    /* Ajuste para centrar horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Corrige la posición para centrar */
+}
+
+.cargando::before,
+.cargando::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
+.cargando::before {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg,
+            #b22222 0%,
+            /* Firebrick (Rojo apagado) */
+            #dc143c 10%,
+            /* Crimson (Rojo apagado) */
+            #ff4500 20%,
+            /* OrangeRed (Rojo anaranjado apagado) */
+            #ff6347 30%,
+            /* Tomato (Rojo tomate) */
+            #ff7f50 40%,
+            /* Coral (Coral) */
+            #4682b4 50%,
+            /* Steel Blue (Azul acero) */
+            #5f9ea0 60%,
+            /* Cadet Blue (Azul cadete) */
+            #6495ed 70%,
+            /* Cornflower Blue (Azul azul) */
+            #1e90ff 80%,
+            /* Dodger Blue (Azul Dodger) */
+            #00bfff 90%,
+            /* Deep Sky Blue (Azul cielo profundo) */
+            #add8e6 100%
+            /* Light Blue (Azul claro) */
+        );
+
+    animation: cargando012323 .5s infinite linear;
+}
+
+.cargando::after {
+    width: 85%;
+    height: 85%;
+    background-color: #06142E;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes cargando012323 {
+    to {
+        transform: rotate(360deg);
+    }
+}

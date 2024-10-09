@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    background-color: #00274f;
+    box-shadow: 0px 0px 10px rgb(277, 288, 237);
+    border-radius: 2px solid rgba(255, 255, 255, 0.18);
+
+    margin-top: auto;
+    color: white;
+}
+
+.footer_conten h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    text-align: center;
+}
+
+
+.footer_conten h5 {
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.redes_sociales {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    margin-top: 1em;
+}
+
+
+.redes_sociales img {
+    width: 25px;
+    height: 25px;
+
+}

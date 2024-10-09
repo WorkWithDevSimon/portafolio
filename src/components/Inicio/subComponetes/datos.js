@@ -36,8 +36,7 @@ const mainDatos =
     main_info_redes: [
         { text: "linkedin", url: "https://www.linkedin.com/in/sim%C3%B3n-santib%C3%A1%C3%B1ez-6bb6a12a4/", icon: linkedin },
         { text: "instagram", url: "https://www.instagram.com/s_m_n_s_z/", icon: instagram },
-        { text: "email", url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=simonsantibanez16@gmail.com", icon: email },
-        { text: "whatsapp", url: "https://wa.me/5945739628", icon: whatsapp }
+        { text: "whatsapp", url: "https://wa.me/945739628", icon: whatsapp }
 
     ],
     img_main: img4
@@ -254,7 +253,7 @@ const miDatosFooter = [
     { text: "linkedin", url: "https://www.linkedin.com/in/sim%C3%B3n-santib%C3%A1%C3%B1ez-6bb6a12a4/", icon: linkedin },
     { text: "instagram", url: "https://www.instagram.com/s_m_n_s_z/", icon: instagram },
     { text: "github", url: "https://github.com/WorkWithDevSimon", icon: github },
-    { text: "whatsapp", url: "https://wa.me/5945739628", icon: whatsapp }
+    { text: "whatsapp", url: "https://wa.me/945739628", icon: whatsapp }
 
 ]
 

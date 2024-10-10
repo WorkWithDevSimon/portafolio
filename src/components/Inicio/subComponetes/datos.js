@@ -8,7 +8,7 @@ import { aws, docker, hostinger } from "../../../icon/indexicon";
 import { excel, powerpoint, word, power_bi } from "../../../icon/indexicon";
 import { visualestudio, visualestudiocode, androidstudio } from "../../../icon/indexicon";
 import { github, git, github_dark } from "../../../icon/indexicon";
-import { img4 } from "../../../img/datosImg";
+import { img4, img1 } from "../../../img/datosImg";
 import { img1Biblo, img2Biblo, img3Biblo, img4Biblo, img5Biblo, img6Biblo, img7Biblo, img8Biblo } from "../../../img/datosImg";
 import {
     img1Tatto, img2Tatto, img3Tatto, img4Tatto, img5Tatto, img6Tatto,
@@ -39,7 +39,7 @@ const mainDatos =
         { text: "whatsapp", url: "https://wa.me/945739628", icon: whatsapp }
 
     ],
-    img_main: img4
+    img_main: img1
 }
 
 

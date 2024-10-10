@@ -1,6 +1,7 @@
 
 import img4 from "./imgInicio/img4.jpg";
-export { img4 };
+import img1 from "./imgInicio/img1.jpg";
+export { img4, img1 };
 
 // ----------------------------------------------------------------
 import img1Tatto from "./imgWebTatu/img1Tatto.jpg";

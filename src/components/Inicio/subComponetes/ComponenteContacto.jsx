@@ -59,7 +59,8 @@ export const ComponenteContacto = () => {
                     <form id="form" className="form" onSubmit={manejarEnvio}>
                         <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre" maxLength="100"
                         />
-                        <input type="number" id="telefono" name="telefono" placeholder="Ingrese teléfono" min="0" maxLength="20" />
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese teléfono" maxlength="19" pattern="[0-9]*" />
+
                         <input type="email" id="email" name="email"
                             placeholder="Ingrese correo electronico" maxLength="254 " />
                         <textarea

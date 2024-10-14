@@ -36,7 +36,8 @@ const mainDatos =
     main_info_redes: [
         { text: "linkedin", url: "https://www.linkedin.com/in/sim%C3%B3n-santib%C3%A1%C3%B1ez-6bb6a12a4/", icon: linkedin },
         { text: "instagram", url: "https://www.instagram.com/s_m_n_s_z/", icon: instagram },
-        { text: "whatsapp", url: "https://wa.me/945739628", icon: whatsapp }
+        { text: "whatsapp", url: "https://wa.me/945739628", icon: whatsapp },
+        { text: "Repositorio", url: "https://github.com/WorkWithDevSimon", icon: github }
 
     ],
     img_main: img1

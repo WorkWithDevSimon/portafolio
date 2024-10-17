@@ -52,12 +52,14 @@ import excel from './Productividad_Análisis/excel.svg'
 import power_bi from './Productividad_Análisis/power_bi.svg'
 import powerpoint from './Productividad_Análisis/powerpoint.svg'
 import word from './Productividad_Análisis/word.svg'
-export { excel, powerpoint, word, power_bi };
+import Rlogo from './Productividad_Análisis/Rlogo.svg'
+export { excel, powerpoint, word, power_bi, Rlogo };
 // ---------------------Entornos_de_Desarrollo-------------------------
 import visualestudio from './Entornos_de_Desarrollo/visualestudio.svg'
 import visualestudiocode from './Entornos_de_Desarrollo/visualestudiocode.svg'
 import androidstudio from './Entornos_de_Desarrollo/androidstudio.svg'
-export { visualestudio, visualestudiocode, androidstudio };
+import R_estudio from './Entornos_de_Desarrollo/R_estudio.svg'
+export { visualestudio, visualestudiocode, androidstudio, R_estudio };
 // --------------------- ColaboracionYControl-------------------------
 
 import github from './ColaboracionYControl/github.svg'

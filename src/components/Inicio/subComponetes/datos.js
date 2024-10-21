@@ -35,7 +35,7 @@ const mainDatos =
     main_info_descripcion: "Como Desarrollador Full Stack Junior, mi enfoque en el mundo digital es altamente analítico. A través de un aprendizaje autodidacta continuo, he adquirido una comprensión sólida y completa de las tecnologías que impulsan nuestro entorno digital, así como de los principios y estructuras que conforman el desarrollo del software",
     main_info_redes: [
         { text: "linkedin", url: "https://www.linkedin.com/in/sim%C3%B3n-santib%C3%A1%C3%B1ez-6bb6a12a4/", icon: linkedin },
-        { text: "instagram", url: "https://www.instagram.com/s_m_n_s_z/", icon: instagram },
+        { text: "instagram", url: "https://www.instagram.com/coder_saimon/", icon: instagram },
         { text: "whatsapp", url: "https://wa.me/945739628", icon: whatsapp },
         { text: "Repositorio", url: "https://github.com/WorkWithDevSimon", icon: github }
 
@@ -252,7 +252,7 @@ const logros_datos = [
 
 const miDatosFooter = [
     { text: "linkedin", url: "https://www.linkedin.com/in/sim%C3%B3n-santib%C3%A1%C3%B1ez-6bb6a12a4/", icon: linkedin },
-    { text: "instagram", url: "https://www.instagram.com/s_m_n_s_z/", icon: instagram },
+    { text: "instagram", url: "https://www.instagram.com/coder_saimon/", icon: instagram },
     { text: "github", url: "https://github.com/WorkWithDevSimon", icon: github },
     { text: "whatsapp", url: "https://wa.me/945739628", icon: whatsapp }
 

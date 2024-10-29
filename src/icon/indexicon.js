@@ -59,14 +59,14 @@ import visualestudio from './Entornos_de_Desarrollo/visualestudio.svg'
 import visualestudiocode from './Entornos_de_Desarrollo/visualestudiocode.svg'
 import androidstudio from './Entornos_de_Desarrollo/androidstudio.svg'
 import R_estudio from './Entornos_de_Desarrollo/R_estudio.svg'
-export { visualestudio, visualestudiocode, androidstudio, R_estudio };
+import Packetraser from './Entornos_de_Desarrollo/Packetraser.png'
+export { visualestudio, visualestudiocode, androidstudio, R_estudio, Packetraser };
 // --------------------- ColaboracionYControl-------------------------
 
 import github from './ColaboracionYControl/github.svg'
 import git from './ColaboracionYControl/git.svg'
 import github_dark from './ColaboracionYControl/github_dark.svg'
 export { github, git, github_dark };
-
 
 // export es una palabra clave en JavaScript que permite compartir funciones,
 // objetos o variables de un archivo para que otros archivos puedan usarlos. 

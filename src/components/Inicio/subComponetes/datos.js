@@ -6,7 +6,7 @@ import { postman } from "../../../icon/indexicon";
 import { oracle, mysql, mongodb, firebase, microsoft_sql_server } from "../../../icon/indexicon";
 import { aws, docker, hostinger } from "../../../icon/indexicon";
 import { excel, powerpoint, word, power_bi, Rlogo } from "../../../icon/indexicon";
-import { visualestudio, visualestudiocode, androidstudio, R_estudio } from "../../../icon/indexicon";
+import { visualestudio, visualestudiocode, androidstudio, R_estudio, Packetraser } from "../../../icon/indexicon";
 import { github, git, github_dark } from "../../../icon/indexicon";
 import { img4, img1 } from "../../../img/datosImg";
 import { img1Biblo, img2Biblo, img3Biblo, img4Biblo, img5Biblo, img6Biblo, img7Biblo, img8Biblo } from "../../../img/datosImg";
@@ -84,7 +84,7 @@ const habilidadesData = {
         },
         {
             title: "Entornos de Desarrollo",
-            images: [visualestudio, visualestudiocode, androidstudio, R_estudio],
+            images: [visualestudio, visualestudiocode, androidstudio, R_estudio, Packetraser],
             nombre_clase: "Entornos_de_Desarrollo"
         },
         {

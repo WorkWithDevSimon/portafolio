@@ -20,7 +20,7 @@ export const ComponenteInicio = () => {
                         <a href="/documents/CV_Informatica.docx" download>
                             <button className="btn">Descargar CV</button>
                         </a>
-                        <NavLink to='/Contacto'><button className="btn">Contactame</button></NavLink>
+                        <NavLink to='/Proyectos'><button className="btn">Proyectos</button></NavLink>
                     </section>
                     <img src={mainDatos.img_main} className="img_main" alt="primer imagen main" />
                 </main>

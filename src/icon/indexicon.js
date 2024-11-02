@@ -40,7 +40,7 @@ import oracle from './base_datos/oracle.svg'
 import mysql from './base_datos/mysql.svg'
 import mongodb from './base_datos/mongodb.svg'
 import firebase from './base_datos/firebase.svg'
-import microsoft_sql_server from './base_datos/microsoft_sql_server.svg'
+import microsoft_sql_server from './base_datos/microsoft_sql_server.png'
 export { oracle, mysql, mongodb, firebase, microsoft_sql_server };
 // ---------------------Tecnologia Cloud-------------------------
 import aws from './tecnologia_cloud/aws.svg'

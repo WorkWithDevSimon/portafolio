@@ -15,12 +15,15 @@ export const ComponenteHabilidad = () => {
                             <h3>{item.title}</h3>
                             <div className="card_habilidaes_lenguajes">
                                 {item.images.map((image, imgIndex) => (
-                                    <img src={image} alt={`icon-${imgIndex}`} key={imgIndex} />
+                                    <a href={image.url} key={imgIndex} target="_blank" rel="noopener noreferrer">
+                                        <img src={image.img} alt={`icon-${imgIndex}`} />
+                                    </a>
                                 ))}
                             </div>
                         </div>
                     ))}
                 </div>
+
             </section>
         </>
     )

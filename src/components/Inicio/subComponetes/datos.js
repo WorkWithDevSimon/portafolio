@@ -49,53 +49,99 @@ const habilidadesData = {
     habilidades: [
         {
             title: "Frontend",
-            images: [html, css, javascript],
+            images: [
+                { img: html, url: "https://html.spec.whatwg.org/multipage/" },
+                { img: css, url: "https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics" },
+                { img: javascript, url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+            ],
             nombre_clase: "FrontEnd"
         },
         {
             title: "Framework",
-            images: [react, redux, django, bootstrap, tailwind, react_native],
+            images: [
+                { img: react, url: "https://reactjs.org/" },
+                { img: redux, url: "https://redux.js.org/" },
+                { img: django, url: "https://www.djangoproject.com/" },
+                { img: bootstrap, url: "https://getbootstrap.com/" },
+                { img: tailwind, url: "https://tailwindcss.com/" },
+                { img: react_native, url: "https://reactnative.dev/" },
+            ],
             nombre_clase: "framework"
         },
         {
             title: "Backend",
-            images: [python, php, java, kotlin, c_plus_plus, cgato, c_solo],
+            images: [
+                { img: python, url: "https://www.python.org/" },
+                { img: php, url: "https://www.php.net/" },
+                { img: java, url: "https://www.java.com/es/download/help/whatis_java.html" },
+                { img: kotlin, url: "https://kotlinlang.org/docs/home.html" },
+                { img: c_plus_plus, url: "https://isocpp.org/" },
+                { img: cgato, url: "https://en.wikipedia.org/wiki/C_(programming_language)" },
+                { img: c_solo, url: "https://en.wikipedia.org/wiki/C_(programming_language)" },
+            ],
             nombre_clase: "back_end"
         },
         {
             title: "APIs",
-            images: [postman],
+            images: [
+                { img: postman, url: "https://www.postman.com/" }
+            ],
             nombre_clase: "APIs"
         },
         {
             title: "Bases de Datos",
-            images: [oracle, microsoft_sql_server, mysql, mongodb, firebase],
+            images: [
+                { img: oracle, url: "https://www.oracle.com/cl/database/" },
+                { img: microsoft_sql_server, url: "https://learn.microsoft.com/en-us/sql/sql-server" },
+                { img: mysql, url: "https://www.mysql.com/" },
+                { img: mongodb, url: "https://www.mongodb.com/" },
+                { img: firebase, url: "https://firebase.google.com/" },
+            ],
             nombre_clase: "Bases_de_Datos"
         },
         {
             title: "Tecnologías Cloud",
-            images: [aws, docker, firebase, hostinger],
+            images: [
+                { img: aws, url: "https://aws.amazon.com/" },
+                { img: docker, url: "https://www.docker.com/" },
+                { img: firebase, url: "https://firebase.google.com/" },
+                { img: hostinger, url: "https://www.hostinger.es/tutoriales/que-es-un-hosting" },
+            ],
             nombre_clase: "Tecnologías_Cloud"
         },
         {
             title: "Productividad y Análisis",
-            images: [excel, powerpoint, word, power_bi, Rlogo],
+            images: [
+                { img: excel, url: "https://www.microsoft.com/en-us/microsoft-365/excel" },
+                { img: powerpoint, url: "https://www.microsoft.com/en-us/microsoft-365/powerpoint" },
+                { img: word, url: "https://www.microsoft.com/en-us/microsoft-365/word" },
+                { img: power_bi, url: "https://powerbi.microsoft.com/" },
+                { img: Rlogo, url: "https://www.r-project.org/" },
+            ],
             nombre_clase: "Productividad_Análisis"
         },
         {
             title: "Entornos de Desarrollo",
-            images: [visualestudio, visualestudiocode, androidstudio, R_estudio, Packetraser],
+            images: [
+                { img: visualestudio, url: "https://visualstudio.microsoft.com/" },
+                { img: visualestudiocode, url: "https://code.visualstudio.com/" },
+                { img: androidstudio, url: "https://developer.android.com/studio" },
+                { img: R_estudio, url: "https://posit.co/products/open-source/rstudio/" },
+                { img: Packetraser, url: "https://ccnadesdecero.es/que-es-cisco-packet-tracer/" },
+            ],
             nombre_clase: "Entornos_de_Desarrollo"
         },
         {
             title: "Colaboración y Control",
-            images: [github, git],
+            images: [
+                { img: github, url: "https://github.com/" },
+                { img: git, url: "https://git-scm.com/" },
+            ],
             nombre_clase: "ColaboracionYControl"
         }
-
-
     ]
 };
+
 // ---------------------------------Componente AcercaDeMi-----------------------------------------------
 
 

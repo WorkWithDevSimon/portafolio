@@ -17,7 +17,7 @@ export const ComponenteInicio = () => {
                                 </a>
                             ))}
                         </div>
-                        <a href="/documents/CV_Informatica.docx" download>
+                        <a href="/documents/CV-Informatica.pdf" download>
                             <button className="btn">Descargar CV</button>
                         </a>
                         <NavLink to='/Proyectos'><button className="btn">Proyectos</button></NavLink>

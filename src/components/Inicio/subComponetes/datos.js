@@ -432,7 +432,7 @@ const projectsData = {
       links: [
         {
           text: "Repositorio",
-          url: "https://github.com/WorkWithDevSimon/formulario_notas_alumnos_php.git",
+          url: "https://github.com/WorkWithDevSimon/lista-de-tareas.git",
           icon: github,
         },
       ],

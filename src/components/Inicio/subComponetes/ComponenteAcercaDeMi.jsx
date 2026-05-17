@@ -13,7 +13,7 @@ export const ComponenteAcercaDeMi = () => {
                 <div className="acercaDeMi_info">
                     <div className='acercaDeMiConetendor'>
                         <h1>{item.title}</h1>
-                        <div className="SobreLineaacercaDeMi_info"></div>
+                    <div className="SobreLinea"></div>
                     </div>
                     {item.paragraphs.map((paragraph, index) => (
                         <p key={index}>{paragraph}</p>

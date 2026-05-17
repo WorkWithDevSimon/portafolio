@@ -20,18 +20,19 @@ import redux from './frameworks/redux.svg';
 import django from './frameworks/django.svg';
 import bootstrap from './frameworks/bootstrap.svg';
 import tailwind from './frameworks/tailwind.svg';
-import react_native from './frameworks/react_native.svg';
+import laravel from './frameworks/laravel.svg';
+import flutter_logo from './frameworks/flutter_logo.svg';
 
-export { react, redux, django, bootstrap, tailwind, react_native };
+export { react, redux, django, bootstrap, tailwind, laravel,flutter_logo};
 // ---------------------Backend-------------------------
 import php from './back_end/php.svg'
 import python from './back_end/python.svg'
 import java from './back_end/java.svg'
 import kotlin from './back_end/kotlin.svg'
 import c_plus_plus from './back_end/c_plus_plus.svg'
-import cgato from './back_end/cgato.svg'
-import c_solo from './back_end/c_solo.svg'
-export { php, python, java, kotlin, c_plus_plus, cgato, c_solo };
+ import c_solo from './back_end/c_solo.svg'
+ import dart from './back_end/dart.svg'
+export { php, python, java, kotlin, c_plus_plus, c_solo ,dart};
 // ---------------------postman-------------------------
 import postman from './apisHabilidad/postman.svg'
 export { postman };
@@ -45,8 +46,9 @@ export { oracle, mysql, mongodb, firebase, microsoft_sql_server };
 // ---------------------Tecnologia Cloud-------------------------
 import aws from './tecnologia_cloud/aws.svg'
 import docker from './tecnologia_cloud/docker.svg'
-import hostinger from './tecnologia_cloud/hostinger.svg'
-export { aws, docker, hostinger };
+import oracle_cloud from './tecnologia_cloud/oracle_cloud.png'
+import digitalOcean_logo from './tecnologia_cloud/digitalOcean_logo.svg'
+export { aws, docker, oracle_cloud,digitalOcean_logo };
 // ---------------------Productividad_Análisis-------------------------
 import excel from './Productividad_Análisis/excel.svg'
 import power_bi from './Productividad_Análisis/power_bi.svg'
@@ -66,7 +68,8 @@ export { visualestudio, visualestudiocode, androidstudio, R_estudio, Packetraser
 import github from './ColaboracionYControl/github.svg'
 import git from './ColaboracionYControl/git.svg'
 import github_dark from './ColaboracionYControl/github_dark.svg'
-export { github, git, github_dark };
+import bitbucket from './ColaboracionYControl/bitbucket.svg'
+export { github, git, github_dark ,bitbucket};
 
 // export es una palabra clave en JavaScript que permite compartir funciones,
 // objetos o variables de un archivo para que otros archivos puedan usarlos. 

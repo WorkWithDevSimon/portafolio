@@ -1,6 +1,6 @@
 
 import img4 from "./imgInicio/img4.jpg";
-import img1 from "./imgInicio/img1.jpg";
+import img1 from "./imgInicio/img1.png";
 export { img4, img1 };
 
 // ----------------------------------------------------------------
@@ -80,4 +80,36 @@ import logro_5 from "./imgLogros/logro_5.jpg";
 import logro_6 from "./imgLogros/logro_6.jpg";
 import logro_7 from "./imgLogros/logro_7.jpg";
 import logro_8 from "./imgLogros/logro_8.jpg";
-export { logro_1, logro_2, logro_3, logro_4, logro_5, logro_6, logro_7, logro_8 };
+import logro_9 from "./imgLogros/logro_9.png";
+import logro_10 from "./imgLogros/logro_10.png";
+import logro_11 from "./imgLogros/logro_11.png";
+import logro_12 from "./imgLogros/logro_12.png";
+export { logro_1, logro_2, logro_3, logro_4, logro_5, logro_6, logro_7, logro_8,logro_9,logro_10,logro_11,logro_12 };
+
+
+// ----------------------------------------------------------------
+
+import imgcalculadora_mas_corporal1 from "./imgcalculadora_mas_corporal/imgcalculadora_mas_corporal1.png";
+export {imgcalculadora_mas_corporal1 };
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+
+import imgListadoDeProducto from "./imagenEcommerce/imgListadoDeProducto.png";
+import imgListadoDeProducto1 from "./imagenEcommerce/imgListadoDeProducto1.png";
+import imgListadoDeProducto2 from "./imagenEcommerce/imgListadoDeProducto2.png";
+export {imgListadoDeProducto,imgListadoDeProducto1,imgListadoDeProducto2 };
+
+// ----------------------------------------------------------------
+
+import imgNotasAlumnos from "./imgenNotasAlumnos/imgNotasAlumnos.png";
+export {imgNotasAlumnos };
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+
+import imgListaTarea from "./imgListaTarea/imgListaTarea.png";
+export {imgListaTarea };
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------

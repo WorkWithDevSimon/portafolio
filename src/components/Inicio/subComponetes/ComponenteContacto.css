@@ -23,52 +23,160 @@
     max-width: 600px;
     margin: 40px auto;
 }
+ 
+ /* ── Contenedor del formulario ── */
+.container_contacto {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 40px;       /* más margen lateral */
+}
 
+.container_contacto h4 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 44px;
+  animation: formUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.05s both;
+}
+
+/* ── Formulario ── */
 .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 0;
 }
 
-.form input {
-    padding: 10px 20px;
-    margin-top: 1.5rem;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    color: #ffffff;
+/* ── Wrapper para label flotante ── */
+.form .field {
+  position: relative;
+  margin-bottom: 24px;
+  animation: formUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
+.form .field:nth-child(1) { animation-delay: 0.08s; }
+.form .field:nth-child(2) { animation-delay: 0.16s; }
+.form .field:nth-child(3) { animation-delay: 0.24s; }
+.form .field:nth-child(4) { animation-delay: 0.32s; }
 
+/* ── Inputs ── */
+.form input,
 .form textarea {
-    resize: none;
-    height: 150px;
-    background: none;
-    margin-top: 1em;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    margin: 1em;
+    margin-bottom: 20px;
+  width: 100%;
+  background: transparent;                      /* sin fondo propio */
+  border: 1px solid rgba(255, 255, 255, 0.18);  /* borde sutil blanco */
+  border-radius: 10px;
+  padding: 20px 18px 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
 }
 
+.form input:hover,
+.form textarea:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: rgba(255, 255, 255, 0.70);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.07);
+  transform: translateY(-1px);
+}
+
+/* ── Label flotante ── */
+.form label {
+  position: absolute;
+  left: 18px;
+  top: 16px;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 14px;
+  pointer-events: none;
+  transform-origin: left top;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form input:focus + label,
+.form input:not(:placeholder-shown) + label,
+.form textarea:focus + label,
+.form textarea:not(:placeholder-shown) + label {
+  transform: scale(0.75) translateY(-12px);
+  color: rgba(255, 255, 255, 0.60);
+}
+
+/* ── Línea accent debajo de cada campo ── */
+.form .line-accent {
+  height: 1px;
+  width: 0;
+  background: rgba(255, 255, 255, 0.50);
+  border-radius: 1px;
+  margin-top: -1px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form input:focus ~ .line-accent,
+.form textarea:focus ~ .line-accent {
+  width: 100%;
+}
+
+/* ── Textarea ── */
+.form textarea {
+  resize: none;
+  height: 150px;
+  padding-top: 24px;
+}
+
+/* ── Botón ── */
 .btn_form {
-    margin: auto;
-    width: auto;
-    padding: 15px 25px;
-    background-color: aqua;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+
+  display: block;
+  margin: 20px auto 0;
+  margin-bottom: 50px;
+  padding: 15px 52px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.25s ease;
+  animation: formUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.42s both;
 }
 
 .btn_form:hover {
-    background-color: #25afff;
+  border-color: rgba(255, 255, 255, 0.80);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 28px rgba(255, 255, 255, 0.08);
 }
 
-.SobreLineacontactame {
-    margin-left: 3px;
-    margin-top: -7px;
-    background-color: red;
-    width: 80px;
-    height: 4px;
+.btn_form:active {
+  transform: scale(0.97);
+}
+
+/* ── Animación de entrada ── */
+@keyframes formUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

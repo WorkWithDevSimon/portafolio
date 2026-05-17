@@ -42,12 +42,7 @@
     color: #f0f0f0;
 }
 
-.SobreLineaacercaDeMi_info {
-    background-color: red;
-    width: 130px;
-    height: 4px;
-    margin-top: -4px;
-}
+ 
 
 @media screen and (max-width:900px) {
 
@@ -66,11 +61,7 @@
     .acercaDeMi h1 {
         text-align: center;
     }
-
-    .SobreLineaacercaDeMi_info {
-        margin: auto;
-
-    }
+ 
 
     .acercaDeMi p {
         text-align: center;

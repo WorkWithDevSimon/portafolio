@@ -52,8 +52,9 @@ export const ComponenteContacto = () => {
             <section className="contactame">
                 <div className="contactem_titulo">
                     <h1>Contacto</h1>
-                    <div className="SobreLineacontactame"></div>
-                </div>
+                                        <div className="SobreLinea"></div>
+
+                 </div>
                 <div className="container_contacto">
                     <h4>Puedes contactarme a través de este formulario</h4>
                     <form id="form" className="form" onSubmit={manejarEnvio}>

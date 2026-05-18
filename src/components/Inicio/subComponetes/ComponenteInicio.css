@@ -1,0 +1,360 @@
+.contenedor_main {
+    width: 100vw;
+    min-height: 95vh;
+}
+
+.contenedor_main {
+    width: 100%;
+    min-height: 95vh;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 80vh;
+    margin: 50px auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.main_info {
+    width: 100%;
+    max-width: 500px;
+    justify-self: start;
+}
+
+.img_main_wrapper {
+    perspective: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.img_main {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    margin: auto;
+    box-shadow:
+        0 0 0 4px rgba(0, 191, 255, 0.25),
+        0 0 0 8px rgba(0, 191, 255, 0.10),
+        0 30px 80px rgba(0, 191, 255, 0.35),
+        0 60px 120px rgba(0, 30, 80, 0.6);
+    transition: box-shadow 0.4s ease;
+}
+
+.text_animated {
+    font-size: clamp(1.5vw, 1.2em, 1.5rem);
+    font-weight: 600;
+    min-width: 280px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.text_animated::before {
+    content: "";
+    color: #00ffee;
+    animation: words 20s infinite;
+}
+
+.text_animated::after {
+    overflow: hidden;
+    content: "";
+    background-color: #06142E;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 28px;
+    border-left: 3px solid #00ffee;
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+.main_info_descripcion {
+    font-size: 17px;
+    margin: 0.8rem 0;
+    color: #f0f0f0;
+    line-height: 1.3;
+}
+
+.main_info_redes {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.main_info_redes img {
+    width: 25px;
+    height: 25px;
+}
+
+.btn {
+    font-size: 14px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    margin-right: 10px;
+    background-color: #00bfff;
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #96cded;
+}
+
+/* --------------------Animaciones------------------------------------------- */
+@keyframes cursor {
+    to {
+        border-left: 2px solid #000000;
+    }
+}
+
+@keyframes words {
+    0% {
+        content: "Soy Junior Full Stack";
+    }
+    10%,
+    20% {
+        content: "Desarrollador de web y móvil";
+    }
+    21%,
+    40% {
+        content: "Realizo análisis de datos";
+    }
+    41%,
+    60% {
+        content: "Creo soluciones en la nube";
+    }
+    61%,
+    80% {
+        content: "Creo soluciones escalables";
+    }
+    81%,
+    100% {
+        content: "Gestiono redes y conectividad";
+    }
+}
+
+@keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
+/* --------------------Animaciones2------------------------------------------- */
+/* --------------------Animaciones2------------------------------------------- */
+.img_main_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.img_3d_scene {
+    position: relative;
+    width: fit-content;
+    will-change: transform;
+}
+
+/* Borde luminoso que se deforma junto a la imagen */
+.img_3d_scene::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 255, 238, 0.6),
+        rgba(0, 191, 255, 0.2),
+        rgba(0, 255, 238, 0.0),
+        rgba(0, 191, 255, 0.5)
+    );
+    animation: blob 8s ease-in-out infinite, borderSpin 6s linear infinite;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+/* Halo exterior que pulsa */
+.img_3d_scene::after {
+    content: "";
+    position: absolute;
+    inset: -14px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(0, 255, 238, 0.15);
+    animation: blob 8s ease-in-out infinite reverse, haloPulse 4s ease-in-out infinite;
+    z-index: -1;
+}
+
+.img_main {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    box-shadow:
+        0 0 0 4px rgba(0, 191, 255, 0.25),
+        0 0 0 8px rgba(0, 191, 255, 0.10),
+        0 30px 80px rgba(0, 191, 255, 0.35),
+        0 60px 120px rgba(0, 30, 80, 0.6);
+    transition: box-shadow 0.5s ease;
+    animation: blob 8s ease-in-out infinite, breathe 8s ease-in-out infinite;
+}
+
+.img_3d_scene:hover .img_main {
+    box-shadow:
+        0 0 0 5px rgba(0, 255, 238, 0.5),
+        0 0 0 14px rgba(0, 255, 238, 0.15),
+        0 40px 100px rgba(0, 255, 238, 0.5),
+        0 70px 140px rgba(0, 30, 80, 0.7);
+}
+
+.img_3d_scene:hover::before {
+    filter: blur(5px);
+    background: linear-gradient(
+        135deg,
+        rgba(0, 255, 238, 0.9),
+        rgba(0, 191, 255, 0.4),
+        rgba(0, 255, 238, 0.1),
+        rgba(0, 191, 255, 0.8)
+    );
+}
+
+.img_glow {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 36px;
+    background: radial-gradient(ellipse, rgba(0, 191, 255, 0.45) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(12px);
+    animation: glowReact 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+/* ── Keyframes ─────────────────────────────────── */
+
+/* Blob principal: bordes se deforman de lado a lado */
+@keyframes blob {
+    0%   { border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; }
+    12%  { border-radius: 42% 58% 55% 45% / 50% 50% 50% 50%; }
+    25%  { border-radius: 38% 62% 60% 40% / 50% 50% 50% 50%; }
+    37%  { border-radius: 45% 55% 52% 48% / 50% 50% 50% 50%; }
+    50%  { border-radius: 62% 38% 40% 60% / 50% 50% 50% 50%; }
+    62%  { border-radius: 58% 42% 44% 56% / 50% 50% 50% 50%; }
+    75%  { border-radius: 48% 52% 38% 62% / 50% 50% 50% 50%; }
+    87%  { border-radius: 44% 56% 45% 55% / 50% 50% 50% 50%; }
+    100% { border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; }
+}
+
+/* Leve respiración de escala — como si tuviera vida */
+@keyframes breathe {
+    0%,  100% { transform: scale(1);      }
+    25%        { transform: scale(1.012); }
+    50%        { transform: scale(1.022); }
+    75%        { transform: scale(1.010); }
+}
+
+/* El borde luminoso rota lentamente */
+@keyframes borderSpin {
+    from { transform: rotate(0deg);   }
+    to   { transform: rotate(360deg); }
+}
+
+/* El halo exterior pulsa de opacidad */
+@keyframes haloPulse {
+    0%, 100% { opacity: 0.3; transform: scale(1);    }
+    50%       { opacity: 0.8; transform: scale(1.04); }
+}
+
+/* La sombra reacciona al blob — se estira cuando la imagen se ensancha */
+@keyframes glowReact {
+    0%   { transform: translateX(-50%) scaleX(1);    opacity: 0.55; }
+    12%  { transform: translateX(-50%) scaleX(0.92); opacity: 0.45; }
+    25%  { transform: translateX(-50%) scaleX(0.85); opacity: 0.4;  }
+    37%  { transform: translateX(-50%) scaleX(0.90); opacity: 0.45; }
+    50%  { transform: translateX(-50%) scaleX(1.15); opacity: 0.65; }
+    62%  { transform: translateX(-50%) scaleX(1.10); opacity: 0.60; }
+    75%  { transform: translateX(-50%) scaleX(0.88); opacity: 0.42; }
+    87%  { transform: translateX(-50%) scaleX(0.93); opacity: 0.48; }
+    100% { transform: translateX(-50%) scaleX(1);    opacity: 0.55; }
+}
+
+@keyframes glowPulse {
+    0%, 100% { opacity: 0.6; transform: translateX(-50%) scaleX(1);   }
+    50%       { opacity: 1;   transform: translateX(-50%) scaleX(1.2); }
+}
+/* --------------------------------------------------------------- */
+
+/* --------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+    .main {
+        margin: auto;
+    }
+
+    .main,
+    .acercaDeMi {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .img_main,
+    .img_AcercaDemi {
+        margin: 10px;
+        width: min(100%, 450px);
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .text_animated {
+        text-align: center;
+    }
+
+    .main_info_redes {
+        justify-content: space-evenly;
+    }
+
+    .main_info_descripcion,
+    .btn {
+        display: none;
+    }
+}

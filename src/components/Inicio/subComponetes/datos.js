@@ -123,6 +123,8 @@ import { imgNotasAlumnos } from "../../../img/datosImg";
 // --------------------------------------------------------------------------------
 import { imgListaTarea } from "../../../img/datosImg";
 // --------------------------------------------------------------------------------
+import { imgGeneradorContrasena } from "../../../img/datosImg";
+// --------------------------------------------------------------------------------
 
 const mainDatos = {
   main_info_h1: "Hola, me llamo ",
@@ -414,7 +416,15 @@ const projectsData = {
       title: "Sistema de Registro Académico",
       description:
         "Plataforma web diseñada para administrar alumnos y calificaciones de manera eficiente. Permite registrar estudiantes, ingresar múltiples notas, calcular promedios automáticamente y gestionar la información mediante funciones de edición y eliminación en una interfaz intuitiva y responsiva.",
-      languages: [html, css, javascript, php, visualestudiocode, git,bootstrap],
+      languages: [
+        html,
+        css,
+        javascript,
+        php,
+        visualestudiocode,
+        git,
+        bootstrap,
+      ],
       links: [
         {
           text: "Repositorio",
@@ -428,11 +438,41 @@ const projectsData = {
       title: "Administrador de Tareas",
       description:
         "Aplicación web enfocada en la organización y gestión de tareas diarias. Permite crear, editar y eliminar actividades en tiempo real mediante una interfaz limpia y funcional, optimizando el seguimiento de pendientes y mejorando la productividad del usuario.",
-      languages: [html, css, javascript, php, visualestudiocode, git,bootstrap],
+      languages: [
+        html,
+        css,
+        javascript,
+        php,
+        visualestudiocode,
+        git,
+        bootstrap,
+      ],
       links: [
         {
           text: "Repositorio",
           url: "https://github.com/WorkWithDevSimon/lista-de-tareas.git",
+          icon: github,
+        },
+      ],
+    },
+    {
+      imgSrc: [imgGeneradorContrasena],
+      title: "Generador de Contraseñas",
+      description:
+        "Aplicación web diseñada para generar contraseñas seguras y personalizadas. Permite definir la longitud de la contraseña e incluir mayúsculas, números y símbolos mediante una interfaz simple, moderna e intuitiva, mejorando la seguridad y facilidad de uso para el usuario.",
+      languages: [
+        html,
+        css,
+        javascript,
+        php,
+        visualestudiocode,
+        git,
+        bootstrap,
+      ],
+      links: [
+        {
+          text: "Repositorio",
+          url: "https://github.com/WorkWithDevSimon/generadorDeContrase-a_php.git",
           icon: github,
         },
       ],
